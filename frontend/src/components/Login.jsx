@@ -20,7 +20,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await axios.post("https://admin-panel-backend-b31l.onrender.com/api/admin/login", 
+      const res = await axios.post("http://localhost:5000/api/admin/login", 
         { email, password }, 
         { withCredentials: true } 
       );
